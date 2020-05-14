@@ -1,0 +1,21 @@
+MODEL:
+  OUTPUT_PATH: "weights/model.pth"
+  LR: 0.001
+  EPOCH: 50
+
+DATA:
+  PIXEL_MEAN: [0.485, 0.456, 0.406]
+  PIXEL_STD: [0.229, 0.224, 0.225]
+  RESIZE: [224, 224]
+  TRAIN_BATCH_SIZE: 32
+  TEST_BATCH_SIZE: 2
+  VALIDATION_SIZE: 0.2
+  NUM_WORKERS: 4
+
+PATH:
+  TRAIN_SET: "~/hw2/data/train"
+  TEST_SET: "~/hw2/data/dev"
+
+DEVICE:
+  GPU: 1
+  CUDA: False
